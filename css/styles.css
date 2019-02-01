@@ -1,0 +1,288 @@
+* {
+    margin: none;
+    padding: none;
+    border: none;
+}
+
+.wrapper {
+    width: 95%;
+    margin: auto;
+}
+
+body {
+    background: #191919;
+    font-family: 'Comfortaa', cursive;
+    color: #f1f1f1;
+}
+
+
+
+      .music_outer, .music_inner_large, .music_inner_small, .cls-4 {
+        fill: none;
+      }
+
+      .music_outer {
+        stroke: #fff;
+      }
+
+      .music_outer, .music_inner_large, .music_inner_small {
+        stroke-miterlimit: 10;
+        stroke-width: 4px;
+      }
+
+      .music_inner_large {
+        stroke: #19dd89;
+      }
+
+      .music_inner_small {
+        stroke: #e838bf;
+      }
+
+
+
+
+
+
+nav {
+    display: grid;
+    width: 90%;
+    margin: auto;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.shadow {
+    text-shadow: 0 0 1vw #191919;
+}
+
+.title {
+    text-align: center;
+    letter-spacing: 2vw;
+    left: -1vw;
+    opacity: 0.2;
+    color: aliceblue;
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue
+}
+
+
+
+.skill_tree_pdf {
+    width: 100%;
+    height: 60vw;
+}
+
+
+.talent_icons {
+    width: 100%;
+    max-width: 900px;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-gap: 1vw;
+    margin: auto;
+}
+
+.base_icon {
+    grid-column-start: 1;
+    grid-column-end: 11;
+    width: 9%;
+    margin: 5vw auto 0;
+}
+
+.climbing_icon {
+
+}
+
+
+.talent_trees {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5vw;
+    text-align: center;
+}
+
+.grid-span {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.authors_section {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+
+
+.author_name {
+    text-align: center;
+    opacity: 0.2;
+    font-size: 0.8vw;
+    letter-spacing: 0.8vw;
+}
+
+nav h1, nav h2 {
+    text-align: center;
+    transition: 0.5s;
+}
+
+nav h2 {
+    font-size: 0.8vw;
+}
+
+nav h1:hover, nav h2:hover {
+    filter: hue-rotate(360deg);
+    cursor: pointer;
+    text-shadow: 0vw 0vw 1vw #ffffff, 0vw 0vw 0.1vw #ff00ff;
+}
+
+#concept_art_section {
+    width: 90%;
+    margin: auto;
+}
+
+#concept_art_section nav {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+}
+
+#concept_art_finished_illustrations,
+#concept_art_protagonist,
+#concept_art_companion,
+#concept_art_base_enemies,
+#concept_art_elites,
+#concept_art_bosses,
+#concept_art_environment,
+#concept_art_objects,
+#concept_art_level_design {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1vw;
+}
+
+#models_section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2vw;
+}
+
+#programming_section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 90%;
+    margin: auto;
+    grid-gap: 1%;
+}
+
+video {
+    width: 100%;
+}
+
+img {
+    width: 100%;
+    transition: 1s;
+/*    cursor: pointer;*/
+    position: relative;
+}
+
+img:hover {
+/*    filter: hue-rotate(360deg);*/
+}
+
+hr {
+    height: 1px;
+    border: 0;
+    border-top: 1px solid white;
+    margin: 1em 0;
+}
+
+.span_three {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+#main_content {
+    position: absolute;
+    width: 98%;
+    margin: auto;
+}
+
+#title_screen {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.title_item {
+    flex-grow: 1;
+}
+
+#title_title {
+    font-size: 5vw;
+    letter-spacing: 5vw;
+    text-align: center;
+    width: 100%;
+    text-shadow: 0 0 5vw white;
+    
+    
+/*    animation: title_pulse 1s alternate infinite;*/
+}
+
+#title_start {
+    margin-top: 1.5vw;
+    font-size: 2.5vw;
+    letter-spacing: 1.2vw;
+    text-align: center;
+    width: 100%;
+    opacity: 1;
+    transition: 1s;
+    
+    animation: pulse 2s ease-out alternate infinite;
+}
+
+#title_start:hover {
+    animation: none;
+}
+
+
+.music_icon {
+    width: 3%;
+    position: absolute;
+    right: 0px;
+    opacity: 0.5;
+}
+
+.music_icon:hover {
+    cursor: pointer;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.record_spin {
+    animation: record_spin 5s linear infinite;
+    transform-origin: 37.20% 75.27%;
+}
+
+
+@keyframes record_spin {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(180deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+@keyframes pulse {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+
+@keyframes title_pulse {
+    0% { text-shadow: 0 0 0vw white; }
+    100% { text-shadow: 0 0 1vw white; }
+}
